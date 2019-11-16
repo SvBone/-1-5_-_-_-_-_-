@@ -1,0 +1,25 @@
+#include <iostream>
+#include <Windows.h>
+using namespace std;
+/*Арифметические действия над числами пронумерованы следующим
+образом: 1 — сложение, 2 — вычитание, 3 — умножение, 4 — деление. Дан
+номер действия N (целое число в диапазоне 1–4) и вещественные числа A
+и B (В не равно 0). Выполнить над числами указанное действие и вывести
+результат.*/
+int main()
+{
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
+	int n;
+	double  a, b; cin >> n >> a >> b;
+	switch(n)
+	{
+	case 1: {cout << a + b << endl; break; }
+	case 2: {cout << a - b << endl; break; }
+	case 3: {cout << a * b << endl; break; }
+	case 4: {cout << a / b << endl; break; }
+	default: {cout << "ERROR" << endl;}
+	}
+	system("pause");
+	return 0;
+}
