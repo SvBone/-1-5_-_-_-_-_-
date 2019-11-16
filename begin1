@@ -5,6 +5,7 @@ int main()
 {
 	int a; cin >> a;
 	int p = 4 * a;
-	cout << p;
+	cout << p << endl;
+	system("pause");
 	return 0;
 }
