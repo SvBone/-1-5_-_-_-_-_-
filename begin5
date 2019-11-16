@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+/*Дана длина ребра куба a. Найти объем куба V = a3 и площадь его
+поверхности S = 6·a2.*/
+int main()
+{
+	int a; cin >> a;
+	int V = pow(a, 3),
+		S = 6 * pow(a,2);
+	cout << "volume: "<< V << endl;
+	cout << "space: " << S << endl;
+	system("pause");
+	return 0;
+}
