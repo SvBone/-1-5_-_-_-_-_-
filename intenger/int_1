@@ -1,0 +1,12 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+/*Дано расстояние L в сантиметрах. Используя операцию деления
+нацело, найти количество полных метров в нем (1 метр = 100 см).*/
+int main()
+{
+	int L; cin >> L;
+	cout << L / 100<< endl;
+	system("pause");
+	return 0;
+}
