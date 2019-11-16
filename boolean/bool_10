@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+/*Даны два целых числа: A, B. Проверить истинность высказыва-
+ния: «Ровно одно из чисел A и B нечетное».*/
+int main()
+{
+	int a, b; cin >> a >> b;
+	bool k = a % 2 != 0;
+	bool f = b % 2 != 0;
+	k + f == 1 ? cout << "True" << endl : cout << "False" << endl;
+	system("pause");
+	return 0;
+}
