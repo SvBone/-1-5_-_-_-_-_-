@@ -1,0 +1,26 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+/*Скорость лодки в стоячей воде V км/ч, скорость течения реки U км/ч
+(U < V ). Время движения лодки по озеру T1 ч, а по реке (против течения)
+— T2 ч. Определить путь S, пройденный лодкой (путь = время · скорость).
+Учесть, что при движении против течения скорость лодки уменьшается
+на величину скорости течения.*/
+int main()
+{
+	int V; 
+	cout << "Enter the speed in the lake: ";
+	cin >> V;
+	int U;
+	cout  << "Enter the speed of the river: ";
+	cin >> U;
+	int T1; 
+	cout <<  "Enter the driving time on the lake: ";
+	cin >> T1;
+	int T2; 
+	cout << "Enter the driving time on the river: ";
+	cin >> T2;
+	cout << "The common path is: " << (V - U) * T2 + V * T1 << endl;
+	system("pause");
+	return 0;
+}
