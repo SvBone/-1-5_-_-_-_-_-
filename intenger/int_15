@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+/*Дано трехзначное число. Вывести число, полученное при переста-
+новке цифр сотен и десятков исходного числа.*/
+int main()
+{
+	int A; cin >> A;
+	cout << (A % 100) / 10<< A / 100 << A % 100 % 10<< endl;
+	system("pause");
+	return 0;
+}
