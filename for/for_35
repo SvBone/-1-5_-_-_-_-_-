@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+/*Дано целое число N (> 2). Последовательность целых чисел AK опре-
+деляется следующим образом:
+A1 = 1,
+A2 = 2,
+AK = AK−1 + AK−2 − 2·AK−3,
+Вывести элементы A1, A2, . . . , AN .*/
+int main()
+{
+	int n, res = 0, a1 = 1, a2 = 2, a3 = 3; cin >> n;
+	cout << a1 << " " << a2 << " " << a3 << " ";
+
+	for (int i = 4; i <= n; i++)
+	{
+		res += (a3 + a2 - 2 * a1);
+		a1 = a2;
+		a2 = a3;
+		a3 = res;
+		cout << res << " ";
+		res = 0;
+	}
+	return 0;
+}
