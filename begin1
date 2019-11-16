@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+/*Дана сторона квадрата a. Найти его периметр P = 4·a.*/
+int main()
+{
+	int a; cin >> a;
+	int p = 4 * a;
+	cout << p;
+	return 0;
+}
