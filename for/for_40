@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+/*Даны целые числа A и B (A < B). Вывести все целые числа от A до B
+включительно; при этом число A должно выводиться 1 раз, число A + 1
+должно выводиться 2 раза и т. д.*/
+int main()
+{
+	int a, b, s = 1; cin >> a >> b;
+
+	for (int i = a; i <= b; i++)
+	{
+		for (int j = a; j <= i; j++)
+		{
+			cout << i << " ";
+		}
+	}
+	cout << endl;
+	system("pause");
+	return 0;
+}
