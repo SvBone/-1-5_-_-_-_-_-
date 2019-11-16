@@ -1,0 +1,14 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+/*Даны координаты двух различных полей шахматной доски x1,
+y1, x2, y2 (целые числа, лежащие в диапазоне 1–8). Проверить истинность
+высказывания: «Данные поля имеют одинаковый цвет».*/
+int main()
+{
+	int x1, y1, x2, y2; cin >> x1 >> y1 >> x2 >> y2;	
+	abs(x1 -x2) == 1 && abs(y1 - y2) == 2 || abs(y1 - y2) == 1 && abs(x1 - x2) == 2 ? 
+		cout << "True" << endl : cout << "False" << endl;
+	system("pause");
+	return 0;
+}
