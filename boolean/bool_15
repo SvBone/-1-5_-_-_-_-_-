@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+/*Даны три целых числа: A, B, C. Проверить истинность высказы-
+вания: «Ровно два из чисел A, B, C являются положительными».*/
+int main()
+{
+	int a, b, c; cin >> a >> b >> c;
+	bool k = a > 0;
+	bool f = b > 0;
+	bool r = c > 0;
+	k + f + r == 2 ? cout << "True" << endl : cout << "False" << endl;
+	system("pause");
+	return 0;
+}
