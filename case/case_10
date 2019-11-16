@@ -1,0 +1,38 @@
+#include <iostream>
+#include <Windows.h>
+using namespace std;
+/*Робот может перемещаться в четырех направлениях («С» — север,
+«З» — запад, «Ю» — юг, «В» — восток) и принимать три цифровые ко-
+манды: 0 — продолжать движение, 1 — поворот налево, −1 — поворот
+направо. Дан символ C — исходное направление робота и целое число N
+— посланная ему команда. Вывести направление робота после выполне-
+ния полученной команды.*/
+int main()
+{
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
+	char c; cin >> c;
+	int i = 0;
+	switch (c)
+	{
+	case 'С': {i = 1; break;}
+	case 'З': {i = 2; break;}
+	case 'Ю': {i = 3; break;}
+	case 'В': {i = 4; break;}
+	default: {cout << "ERROR"; return 0;}
+	}
+	int  n; cin >> n;
+	i = i + n;
+	if (i == 0) i = 4;
+	if (i == 5) i = 1;
+	switch (i)
+	{
+	case 1: {cout << "Север" << endl; break; }
+	case 2: {cout << "Запад" << endl; break; }
+	case 3: {cout << "Юг" << endl; break; }
+	case 4: {cout << "Восток" << endl; break; }
+	default: {cout << "ERROR"; return 0; }
+	}
+	system("pause");
+	return 0;
+}
