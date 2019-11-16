@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+/*Дано вещественное число — цена 1 кг конфет. Вывести стоимость 0.1,
+0.2, . . . , 1 кг конфет.*/
+int main()
+{
+	double s; cin >> s;
+	for (int i = 1; i < 11; i++)
+	{
+		float l = (float)i / 10,
+			   m = s * l;
+		printf_s("The cost of %3f kg of sweets is equal to %f\n", l, m);
+	}
+	system("pause");
+	return 0;
+}
