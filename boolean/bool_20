@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+/*Дано трехзначное число. Проверить истинность высказывания:
+«Все цифры данного числа различны».*/
+int main()
+{
+	int a; cin >> a;
+	bool k = a/100 == (a % 100) / 10;
+	bool f = a / 100 == a % 10;
+	bool r = (a % 100) / 10 == a % 10;
+	k + f + r == 0 ? cout << "True" << endl : cout << "False" << endl;
+	system("pause");
+	return 0;
+}
