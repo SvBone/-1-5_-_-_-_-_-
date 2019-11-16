@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+/*Для данного целого x найти значение следующей функции f, принимаю-
+щей значения целого типа:
+f (x)=2·x,
+если x < −2 или x > 2,
+−3·x,
+в противном случае.*/
+int main()
+{
+	int x; cin >> x;
+	if (x > -2 && x < 2) cout << "f(x) = " << 2 * x << endl;
+	else cout << "f(x) = " << -3 * x << endl;	
+	system("pause");
+	return 0;
+}
