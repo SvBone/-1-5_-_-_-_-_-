@@ -1,0 +1,45 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+/*Найти решение системы линейных уравнений вида
+A1·x + B1·y = C1,
+A2·x + B2·y = C2,
+заданной своими коэффициентами A1, B1, C1, A2, B2, C2, если известно,
+что данная система имеет единственное решение. Воспользоваться фор-
+мулами
+x = (C1·B2 − C2·B1)/D,
+y = (A1·C2 − A2·C1)/D,
+где D = A1·B2 − A2·B1.*/
+int main()
+{
+	double A1; 
+	cout << "Enter the A1: ";
+	cin >> A1;
+
+	double B1;
+	cout  << "Enter the B1: ";
+	cin >> B1;
+
+	double C1;
+	cout <<  "Enter the C1: ";
+	cin >> C1;
+
+	double A2;
+	cout << "Enter the A2: ";
+	cin >> A2;
+
+	double B2;
+	cout << "Enter the B2: ";
+	cin >> B2;
+
+	double C2;
+	cout << "Enter the C2: ";
+	cin >> C2;
+
+	double D = A1 * B2 - A2 * B1;
+	double x = (C1 * B2 - C2 * B1) / D;
+	double y = (A1 * C2 - A2 * C1) / D;
+	printf_s("x = %f\ny = %f\n", x, y);
+	system("pause");
+	return 0;
+}
