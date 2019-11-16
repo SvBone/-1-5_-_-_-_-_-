@@ -1,0 +1,12 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+/*Найти расстояние между двумя точками с заданными координатами
+(x1, y1) и (x2, y2) на плоскости.*/
+int main()
+{
+	double x1, y1, x2, y2;
+	cin >> x1 >> y1 >> x2 >> y2;
+	cout << "distance: " << sqrt(pow((x2 - x1),2) + pow((y2 - y1), 2));
+	return 0;
+}
