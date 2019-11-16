@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+/*Даны три целых числа. Найти количество положительных и количество
+отрицательных чисел в исходном наборе.*/
+int main()
+{
+	int x, y, z, poz = 0, neg = 3; cin >> x >> y >> z;
+	if (x > 0) poz++;
+	if (y > 0) poz++;
+	if (z > 0) poz++;
+	cout << "Positive: " << poz << endl;
+	cout << "Negative: " << neg - poz << endl;		
+	system("pause");
+	return 0;
+}
