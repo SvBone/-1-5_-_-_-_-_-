@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+/*Дано целое число A. Проверить истинность высказывания: «Чис-
+ло A является положительным».*/
+int main()
+{
+	int a; cin >> a;
+	a > 0 ? cout << "True" << endl : cout << "False" << endl;
+	system("pause");
+	return 0;
+}
