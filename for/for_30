@@ -1,0 +1,25 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+/*Дано целое число N (> 1) и две вещественные точки на числовой оси:
+A, B (A < B). Отрезок [A, B] разбит на N равных отрезков. Вывести H —
+длину каждого отрезка, а также значения функции F(X ) = 1 − sin(X ) в
+точках, разбивающих отрезок [A, B]:
+F(A),
+F(A + H),
+F(A + 2·H), . . . ,
+F(B).*/
+int main()
+{
+	int n; cin >> n;
+	float a, b,h; cin >> a >> b;
+	h = (b - a) / n;
+	cout << h << endl;
+	for (int i = 0; i < b + 1; i++)
+	{
+		float k = 1 - sin(a + h * i);
+		printf_s("%f\n", k);
+	}
+	system("pause");
+	return 0;
+}
