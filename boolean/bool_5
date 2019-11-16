@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+/*Даны два целых числа: A, B. Проверить истинность высказывания:
+«Справедливы неравенства A ≥ 0 или B < −2».*/
+int main()
+{
+	int a, b; cin >> a >> b;
+	bool k = a >= 0 && b < -2;
+	k != 0 ? cout << "True" << endl : cout << "False" << endl;
+	system("pause");
+	return 0;
+}
