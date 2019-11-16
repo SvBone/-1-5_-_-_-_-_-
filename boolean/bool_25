@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+/*Даны числа x, y. Проверить истинность высказывания: «Точка с
+координатами (x, y) лежит во второй координатной четверти».*/
+int main()
+{
+	int x, y; cin >> x >> y;	
+	x <= 0 && y >= 0 ? cout << "True" << endl : cout << "False" << endl;
+	system("pause");
+	return 0;
+}
