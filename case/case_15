@@ -1,0 +1,38 @@
+#include <iostream>
+#include <Windows.h>
+using namespace std;
+/*Мастям игральных карт присвоены порядковые номера: 1 — пики,
+2 — трефы, 3 — бубны, 4 — червы. Достоинству карт, старших десятки,
+присвоены номера: 11 — валет, 12 — дама, 13 — король, 14 — туз. Даны
+два целых числа: N — достоинство (6 ≤ N ≤ 14) и M — масть карты
+(1 ≤ M ≤ 4). Вывести название соответствующей карты вида «шестерка
+бубен», «дама червей», «туз треф» и т. п.*/
+int main()
+{
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
+	int n, m; cin >> n >> m;	
+	switch (n)
+	{
+	case 6: {cout << "Шестерка "; break;}
+	case 7: {cout << "Семерка "; break; }
+	case 8: {cout << "Восьмерка "; break; }
+	case 9: {cout << "Девятка "; break; }
+	case 10: {cout << "Десятка "; break; }
+	case 11: {cout << "Валет "; break; }
+	case 12: {cout << "Дама "; break; }
+	case 13: {cout << "Король "; break; }
+	case 14: {cout << "Туз "; break; }
+	default: {cout << "ERROR" << endl; return 0;}
+	}
+	switch (m)
+	{
+	case 1: {cout << "пик " << endl; break; }
+	case 2: {cout << "треф " << endl; break; }
+	case 3: {cout << "бубен " << endl; break; }
+	case 4: {cout << "червей " << endl; break; }
+	default: {cout << "ERROR" << endl; return 0; }
+	}
+	system("pause");
+	return 0;	
+}
