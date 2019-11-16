@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+/*Дано вещественное число A и целое число N (> 0). Найти A в степе-
+ни N :
+AN = A·A· . . . ·A
+(числа A перемножаются N раз).*/
+int main()
+{
+	double a; cin >> a;
+	int n; cin >> n;
+	double s = 1;
+	for (int i = 0; i < n; i++)
+	{
+		s *= a;
+	}
+	cout << s << endl;
+	system("pause");
+	return 0;
+}
