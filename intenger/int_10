@@ -1,0 +1,12 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+/*Дано трехзначное число. Вывести вначале его последнюю цифру
+(единицы), а затем — его среднюю цифру (десятки).*/
+int main()
+{
+	int A; cin >> A;
+	cout << A % 100 % 10 << (A % 100) / 10 << endl;
+	system("pause");
+	return 0;
+}
